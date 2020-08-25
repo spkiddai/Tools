@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+"""
+Author spkiddai
+"""
+
 import sys
 import time
 import requests
@@ -5,6 +12,15 @@ import argparse
 from queue import Queue
 from ZoomEyeUnit import ZoomEyeUnit
 from concurrent.futures import ThreadPoolExecutor
+
+print("""
+                __   .__    .___  .___      .__ 
+  ____________ |  | _|__| __| _/__| _/____  |__|
+ /  ___/\____ \|  |/ /  |/ __ |/ __ |\__  \ |  |
+ \___ \ |  |_> >    <|  / /_/ / /_/ | / __ \|  |
+/____  >|   __/|__|_ \__\____ \____ |(____  /__|
+     \/ |__|        \/       \/    \/     \/    
+""")
 
 z = ZoomEyeUnit()
 #自定义UA 避免检测UA
