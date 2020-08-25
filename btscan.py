@@ -13,7 +13,7 @@ headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWe
 
 #未使用多线程，同时增加休眠时间，避免由于快速大量访问导致的API 500错误
 def producer(page,q):
-    for page in range(10,page):
+    for page in range(1,page):
         time.sleep(1)
         result = z.Host_search("app:\宝塔服务器运维面板\"",page)
         for info in result['matches']:
